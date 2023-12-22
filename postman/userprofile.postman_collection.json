@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "3aa67cfa-4624-40c7-ac9f-d3e93937a8a8",
+		"name": "userprofile",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "31403190"
+	},
+	"item": [
+		{
+			"name": "user-profile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/api/profiles"
+			},
+			"response": []
+		},
+		{
+			"name": "user-profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "Ahmad",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Ruslandia",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Jl. Monumen Emmy Saelan",
+							"type": "text"
+						},
+						{
+							"key": "contact_number",
+							"value": "(62)-812-4071",
+							"type": "text"
+						},
+						{
+							"key": "profile_picture",
+							"type": "file",
+							"src": "/C:/Users/ahmadruslandia/Downloads/picture.jpg"
+						}
+					]
+				},
+				"url": "http://localhost:3000/api/profiles"
+			},
+			"response": []
+		}
+	]
+}
