@@ -39,19 +39,27 @@ class _ViewProfileScreenState extends State<ViewScreen> {
             return Container(
               child: Center(
                 child: CircularProgressIndicator(
-                  color: Colors.blueAccent,
+                  color: Colors.black,
                 ),
               ),
             );
         }),
       ),
       floatingActionButton: FloatingActionButton.extended(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.black,
         onPressed: () async {
           Get.to(() => AddProfileScreen());
         },
-        label: const Text("Add User Profile"),
-        icon: const Icon(Icons.account_circle),
+        label: const Text(
+          'Add User Profile',
+          style: TextStyle(
+            color: Colors.white,
+          ),
+        ),
+        icon: const Icon(
+          Icons.account_circle,
+          color: Colors.white,
+        ),
       ),
     );
   }

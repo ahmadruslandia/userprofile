@@ -7,7 +7,7 @@ module.exports = {
             await connection.beginTransaction();
             const fetchResult = await connection.query(
                 `SELECT id,first_name,last_name,address,contact_number,
-                CONCAT('http://192.168.48.200:3000/upload/',profile_picture) AS profile_picture
+                CONCAT('http://192.168.202.172:3000/upload/',profile_picture) AS profile_picture
                 FROM profile`,
             );
             await connection.commit();
@@ -35,7 +35,7 @@ module.exports = {
             );
             const fetchResult = await connection.query(
                 `SELECT id,first_name,last_name,address,contact_number,
-                CONCAT('http://192.168.48.200:3000/upload/',profile_picture) AS profile_picture
+                CONCAT('http://192.168.202.172:3000/upload/',profile_picture) AS profile_picture
                 FROM profile WHERE id = ?`, [queryResult[0].insertId]
             );
             await connection.commit();

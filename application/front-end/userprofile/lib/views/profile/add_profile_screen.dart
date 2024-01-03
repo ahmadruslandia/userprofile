@@ -191,7 +191,7 @@ class _AddProfileScreenState extends State<AddProfileScreen> {
                     if (profileController.isLoading.value)
                       return LoadingButton(
                         onClick: () async {},
-                        color: Colors.blue,
+                        color: Colors.black,
                         childWidget: Center(
                           child: CircularProgressIndicator(
                             backgroundColor: Colors.white,
@@ -203,7 +203,7 @@ class _AddProfileScreenState extends State<AddProfileScreen> {
                         onClick: () async {
                           profileController.create();
                         },
-                        color: Colors.blue,
+                        color: Colors.black,
                         childWidget: Center(
                             child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
